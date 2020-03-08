@@ -9,14 +9,14 @@ void main() {
 }
 
 class Persona {
-  String first_name;
-  String last_name;
+  String firstName;
+  String lastName;
 
-  Persona({this.first_name, this.last_name});
+  Persona({this.firstName, this.lastName});
   Persona.fromJson(Map parsedJson) {
-    first_name = parsedJson['first_name'];
-    last_name = parsedJson['last_name'];
+    firstName = parsedJson['first_name'];
+    lastName = parsedJson['last_name'];
   }
 
-  String toString() => 'namefull: $first_name $last_name';
+  String toString() => 'namefull: $firstName $lastName';
 }
